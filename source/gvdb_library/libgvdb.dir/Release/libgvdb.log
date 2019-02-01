@@ -1,0 +1,29 @@
+﻿  app_perf.cpp
+C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\app_perf.cpp(217): warning C4311: 'type cast': pointer truncation from 'HANDLE' to 'long'
+C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\app_perf.cpp(217): warning C4302: 'type cast': truncation from 'HANDLE' to 'long'
+  gvdb_allocator.cpp
+  gvdb_camera.cpp
+  gvdb_model.cpp
+  gvdb_node.cpp
+  gvdb_node
+  gvdb_render_opengl.cpp
+  gvdb_scene.cpp
+  gvdb_node
+  gvdb_types.cpp
+  gvdb_vec.cpp
+  gvdb_volume_3D.cpp
+  gvdb_volume_base.cpp
+  gvdb_volume_gvdb.cpp
+  gvdb_node
+C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_gvdb.cpp(3297): warning C4018: '<': signed/unsigned mismatch
+  loader_OBJReader.cpp
+  loader_ObjarReader.cpp
+  gvdb_node
+  loader_Parser.cpp
+  gvdb_node
+  string_helper.cpp
+  gvdb_node
+  Generating Code...
+  glew.c
+     Creating library C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/Release/libgvdb.lib and object C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/Release/libgvdb.exp
+  libgvdb.vcxproj -> C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\Release\libgvdb.dll

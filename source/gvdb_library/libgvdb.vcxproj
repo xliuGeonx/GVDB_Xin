@@ -1,0 +1,1579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C67BC00E-2BCE-32C3-9642-BA3DE70C7E60}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libgvdb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libgvdb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libgvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libgvdb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libgvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libgvdb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libgvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libgvdb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libgvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4996;4244;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RESOURCE_DIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY="../../../source/gvdb_library/";PROJECT_ABSDIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/";PROJECT_NAME="libgvdb";CUDA_GVDB_COPYDATA_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx";SIMPLE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl";SIMPLE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl";VOXELIZE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl";VOXELIZE_GEOM_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl";VOXELIZE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR="Debug";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;RESOURCE_DIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/\";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY=\"../../../source/gvdb_library/\";PROJECT_ABSDIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/\";PROJECT_NAME=\"libgvdb\";CUDA_GVDB_COPYDATA_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx\";SIMPLE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl\";SIMPLE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl\";VOXELIZE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl\";VOXELIZE_GEOM_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl\";VOXELIZE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl\";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR=\"Debug\";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.geom.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_copydata.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_module.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cudart.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_1900cu9x64d.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_hash_1900cu9x64d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib;C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /implib:C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/libgvdb.lib</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/Debug/libgvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/Debug/libgvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4267;4996;4244;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY="../../../source/gvdb_library/";PROJECT_ABSDIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/";PROJECT_NAME="libgvdb";CUDA_GVDB_COPYDATA_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx";SIMPLE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl";SIMPLE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl";VOXELIZE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl";VOXELIZE_GEOM_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl";VOXELIZE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR="Release";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/\";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY=\"../../../source/gvdb_library/\";PROJECT_ABSDIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/\";PROJECT_NAME=\"libgvdb\";CUDA_GVDB_COPYDATA_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx\";SIMPLE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl\";SIMPLE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl\";VOXELIZE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl\";VOXELIZE_GEOM_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl\";VOXELIZE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl\";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR=\"Release\";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.geom.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_copydata.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_module.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cudart.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_1900cu9x64.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_hash_1900cu9x64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib;C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /implib:C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/libgvdb.lib</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/Release/libgvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/Release/libgvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4267;4996;4244;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY="../../../source/gvdb_library/";PROJECT_ABSDIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/";PROJECT_NAME="libgvdb";CUDA_GVDB_COPYDATA_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx";SIMPLE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl";SIMPLE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl";VOXELIZE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl";VOXELIZE_GEOM_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl";VOXELIZE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR="MinSizeRel";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/\";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY=\"../../../source/gvdb_library/\";PROJECT_ABSDIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/\";PROJECT_NAME=\"libgvdb\";CUDA_GVDB_COPYDATA_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx\";SIMPLE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl\";SIMPLE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl\";VOXELIZE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl\";VOXELIZE_GEOM_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl\";VOXELIZE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl\";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR=\"MinSizeRel\";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.geom.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_copydata.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_module.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cudart.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_1900cu9x64.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_hash_1900cu9x64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib;C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /implib:C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/libgvdb.lib</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/MinSizeRel/libgvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/MinSizeRel/libgvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4996;4244;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY="../../../source/gvdb_library/";PROJECT_ABSDIRECTORY="C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/";PROJECT_NAME="libgvdb";CUDA_GVDB_COPYDATA_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx";SIMPLE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl";SIMPLE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl";VOXELIZE_FRAG_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl";VOXELIZE_GEOM_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl";VOXELIZE_VERT_GLSL="C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR="RelWithDebInfo";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;RESOURCE_DIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/resources/\";NOMINMAX;GLEW_STATIC;GLEW_NO_GLU;PROJECT_RELDIRECTORY=\"../../../source/gvdb_library/\";PROJECT_ABSDIRECTORY=\"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/\";PROJECT_NAME=\"libgvdb\";CUDA_GVDB_COPYDATA_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/cuda_gvdb_module.ptx\";SIMPLE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.frag.glsl\";SIMPLE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/simple.vert.glsl\";VOXELIZE_FRAG_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.frag.glsl\";VOXELIZE_GEOM_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.geom.glsl\";VOXELIZE_VERT_GLSL=\"C:/ProjectX/GVDB/gvdb-voxels/_output/lib/voxelize.vert.glsl\";USECUDA;USE_CUDPP;GVDB_EXPORTS;BUILD_OPENGL;CMAKE_INTDIR=\"RelWithDebInfo\";libgvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\include;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>																												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/simple.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.frag.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.geom.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/shaders/voxelize.vert.glsl C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/cudpp_hash_1900cu9x64d.dll C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_copydata.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/cuda_gvdb_module.ptx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx C:/ProjectX/GVDB/gvdb-voxels/_output/lib
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\cudart.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_1900cu9x64.lib;C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\lib\cudpp_hash_1900cu9x64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib;C:/ProjectX/GVDB/gvdb-voxels/source/shared_cudpp/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /implib:C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/libgvdb.lib</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/RelWithDebInfo/libgvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/RelWithDebInfo/libgvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_copydata.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/cuda_gvdb_copydata.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_copydata.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_copydata.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_copydata.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_copydata.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/cuda_gvdb_copydata.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_copydata.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_copydata.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_copydata.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_copydata.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/cuda_gvdb_copydata.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_copydata.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_copydata.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_copydata.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_copydata.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/cuda_gvdb_copydata.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_copydata.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_copydata.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_copydata.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_copydata.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_copydata.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_module.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating $(Configuration)/cuda_gvdb_module.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_module.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_module.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_module.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_module.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating $(Configuration)/cuda_gvdb_module.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_module.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_module.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_module.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_module.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating $(Configuration)/cuda_gvdb_module.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_module.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_module.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_module.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_module.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating $(Configuration)/cuda_gvdb_module.ptx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" --machine=64 --ptx -DSIM_CODE -arch=compute_30 -code=sm_30 --ptxas-options=-v -O3 --use_fast_math --maxrregcount=64 kernels/cuda_gvdb_module.cu -I"C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels" -o "C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/$(Configuration)/cuda_gvdb_module.ptx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/kernels/cuda_gvdb_module.cu;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_module.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\$(Configuration)\cuda_gvdb_module.ptx</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library -BC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library --check-stamp-file C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeSystem.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindCUDPP.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindGLEW.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenGL.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenVDB.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Helpers.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Packages.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library -BC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library --check-stamp-file C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeSystem.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindCUDPP.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindGLEW.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenGL.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenVDB.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Helpers.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Packages.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library -BC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library --check-stamp-file C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeSystem.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindCUDPP.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindGLEW.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenGL.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenVDB.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Helpers.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Packages.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library -BC:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library --check-stamp-file C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeCXXCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeRCCompiler.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\3.13.0-rc2\CMakeSystem.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindCUDPP.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindGLEW.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenGL.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\FindOpenVDB.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Helpers.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\cmake\Packages.cmake;C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\app_perf.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\app_perf.h" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_allocator.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_allocator.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_camera.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_camera.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_model.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_model.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_node.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_node.h" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_render.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_render_opengl.cpp" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_scene.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_scene.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_types.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_types.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_vec.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_vec.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_3D.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_3D.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_base.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_base.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_gvdb.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_gvdb.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_OBJReader.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_OBJReader.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_ObjarReader.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_ObjarReader.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_Parser.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_Parser.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\string_helper.cpp" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\string_helper.h" />
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\src\glew.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <None Include="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" />
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include\cudpp.h" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_dda.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_geom.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_nodes.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_operators.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_particles.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_raycast.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_scene.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_math.cuh" />
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\radixsort_kernel.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\ZERO_CHECK.vcxproj">
+      <Project>{C7826AC3-63D1-3CC2-AE36-422B36F24A17}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

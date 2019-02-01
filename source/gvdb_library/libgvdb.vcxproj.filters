@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\app_perf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_render_opengl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_vec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_gvdb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_OBJReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_ObjarReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\string_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\glew\src\glew.c">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\app_perf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_vec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\gvdb_volume_gvdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_OBJReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_ObjarReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\loader_Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\src\string_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\ProjectX\GVDB\gvdb-voxels\source\shared_cudpp\include\cudpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_copydata.cu">
+      <Filter>CUDA</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_module.cu">
+      <Filter>CUDA</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_dda.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_geom.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_nodes.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_operators.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_particles.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_raycast.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_gvdb_scene.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\cuda_math.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="C:\ProjectX\GVDB\gvdb-voxels\source\gvdb_library\kernels\radixsort_kernel.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{F685C6B2-2FA0-3AF4-8532-CB868BCCCB32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0020FDCF-1BEA-314D-9268-E6180EB2C971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DB52B2BC-3180-3008-B86C-D39F70A318E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{0B5AE8CC-F662-332C-BF30-11D63AC86C45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

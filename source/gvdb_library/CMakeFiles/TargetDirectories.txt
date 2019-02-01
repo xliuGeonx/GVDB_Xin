@@ -1,0 +1,4 @@
+C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/libgvdb.dir
+C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/INSTALL.dir
+C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/ALL_BUILD.dir
+C:/ProjectX/GVDB/gvdb-voxels/source/gvdb_library/CMakeFiles/ZERO_CHECK.dir
